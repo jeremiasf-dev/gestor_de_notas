@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <!-- <link rel="stylesheet" href="../static/css/styles.css"> -->
-    <title> Proyecto Vida</title>
+    <title> {% block titulo %}Proyecto Vida{% endblock %}</title>
 </head>
 <body>
     <!-- Div contenedor -->
@@ -13,14 +13,16 @@
 
         <nav>
             <ul>
-                <li><a href="#">Finanzas</a></li>
-                <li><a href="#">Textos</a></li>
-                <li><a href="#">Próximamente</a></li>
-                <li><a href="#">Próximamente</a></li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('gestor_notas') }}">Notas</a></li>
             </ul>
         </nav>
 
-        <main></main>
+    <main>
+        {% block contenido %}
+        <!-- Acá se carga el contenido de cada módulo del proyecto vida -->
+        {% endblock %}
+    </main>
     </div>
 
     

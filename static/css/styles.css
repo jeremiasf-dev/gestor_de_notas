@@ -14,7 +14,7 @@ body {
     margin: 0;
 
     background: linear-gradient(to bottom, #111 0%, #333 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Recomendación de mi amigo Carlos, se usa la primera que esté disponible en el orden en el cual están */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Recomendación de mi amigo Carlos, se usa la primera que esté disponible en el orden en el cual estánInteresante */
     color: whitesmoke;
     line-height: 1.4;
 }
